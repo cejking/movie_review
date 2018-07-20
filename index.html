@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="7 days">
+  <meta property="og:image:height" content="">
+  <meta property="og:image:width" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property"og:type" content="website">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">  
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <h1 class="title">Favourite Movies</h1>
+
+  <form class="form">
+    <div class="form_input-wrap">
+      <input type="text" name="movieTitle" class="form_input" id="title" required>
+      <label for="title" class="form_label">Movie Title</label>
+    </div>
+    
+    <div class="form_input-wrap">
+      <input type="number" name="rating" class="form_input" id="rating" required>
+      <label for="rating" class="form_label">Rating out of 5</label>
+    </div>
+    
+    <input type="submit" value="Submit" class="form_submit" id="movieSubmit">
+  </form>
+
+  <table class="table" id="table">
+    <tbody id="tbody">
+        <tr class="table_row table_row--header">
+            <th class="table_cell table_head table_head--title">Movie Title</th>
+            <th class="table_cell table_head table_head--rating">Rating</th> 
+            <th class="table_cell table_head table_head--delete">Delete</th>
+          </tr>
+          <tr class="table_row table_row--standard">
+            <td class="table_cell table_data table_data--tile">Star Wars</td>
+            <td class="table_cell table_data table_data--review">
+              <img src="images/star-full.svg" class="rating rating--full">
+              <img src="images/star-full.svg" class="rating rating--full">
+              <img src="images/star-full.svg" class="rating rating--full">
+              <img src="images/star-full.svg" class="rating rating--full">
+              <img src="images/star-full.svg" class="rating rating--full">
+            </td> 
+            <td class="table_cell table_data--delete">
+              <button class="table_delete-btn">Delete</button></td>
+          </tr>
+    </tbody>
+  </table>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
